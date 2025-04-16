@@ -1,0 +1,343 @@
+/* style.css */
+
+/* Reset de estilos para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:white;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #7B68EE;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Estilo da barra de navegação */
+nav {
+    background-color: #DDA0DD;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    background-color: #7B68EE;
+}
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 2em;
+}
+
+/* Estilo de botões */
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo de links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de seções */
+section {
+    margin-bottom: 2em;
+}
+
+/* Adicione esta regra no seu arquivo style.css */
+.provas-lista {
+    background-color: #fff; /* Cor de fundo branca para destacar as provas */
+    padding: 1em;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Sombra leve */
+    margin-bottom: 2em;
+}
+
+.pergunta {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.alternativas{
+    padding-left: 20px;
+}
+
+/* Adicione este conteúdo ao seu arquivo estilo.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 2em;
+    margin-bottom: 2em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pergunta {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.alternativas {
+    margin-top: 10px;
+}
+
+input[type='radio'] {
+    margin-right: 5px;
+}
+
+
+/* Estilo de rodapé */
+footer {
+    background-color:#DDA0DD;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo de formulários */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Estilo de tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo de alertas */
+.alert {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Estilo para o container do formulário */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* Estilo para grupos de formulário */
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #DDA0DD;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #7B68EE;
+    box-shadow: 0 0 5px rgba(123, 104, 238, 0.3);
+}
+
+/* Estilo para botões */
+.btn {
+    background-color: #7B68EE;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6A5ACD;
+}
+
+/* Estilos para a seção Conheca */
+.conheca {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.conheca .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.conheca .text-content {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.conheca .text-content h2 {
+    color: #7B68EE;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.conheca .text-content p {
+    color: #666;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.conheca-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.conheca-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conheca-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(123, 104, 238, 0.2);
+}
+
+.card-icon {
+    background: linear-gradient(135deg, #7B68EE, #DDA0DD);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.card-icon img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+}
+
+.card-content h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .conheca-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .conheca .text-content h2 {
+        font-size: 2rem;
+    }
+}

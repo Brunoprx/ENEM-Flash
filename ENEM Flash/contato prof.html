@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Essa é a página para você enviar todas as suas dúvidas para conseguirmos te ajuadar">
+    <meta name="keywords" content="Estudos, Vestibular, Faculdade">
+    <meta name="author" content="Bruno Henrique">
+    <link rel="icon" type="assetss/logo.png" href="http://example.com/image.png" />
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+    
+    <script src="./script/headeInteration.js" defer></script>
+    <script src="./script/forms.js" defer></script>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="./script/address-map.js" defer></script>
+
+
+    <title>ENEM Flash | Contato</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="./assetss/logo.png"></a>
+            <ul>
+                <li><a href="PHP/professor.php">inicio</a></li>
+                <li><a href="/professor.html#beneficios">Beneficios</a></li>
+                <li><a href="/professor.html#materias">Provas</a></li>
+                <li><a href="/professor.html#conheca">Sobre o site</a></li>
+                <li><a href="#contato">Contato</a></li>
+         
+            </ul>
+            <div class="menu">&#9776;</div>
+        </nav>
+    </header>
+    <main>
+        <div class="background"></div> 
+        <aside>
+            <ul>
+                <li><a href="#hero" target="_blank">inicio</a></li>
+                <li><a href="#beneficios">beneficios</a></li>
+                <li><a href="#materias">materias</a></li>
+                <li><a href="conheca">Sobre Projeto</a></li>
+                <li><a href="contato">Contato</a></li>
+                <li class="buttonSidebar"><a href="aluno ou prof.html">Entrar</a></li>
+            </ul>
+        </aside>
+        <section id="queremos" class="queremos">
+            <div class="container">
+                <h1>Queremos te ouvir</h1>
+                <h3>Mande sua duvida ou veja a localização da nossa empresa abaixo</h3>
+            </div>
+        </section>
+     <section id="contato" class="contato">
+        <div class="container">
+            <div class=" text-content">
+                <h2>fale conosco</h2>
+            </div>
+            <form onsubmit="handleSubmit(event)">
+                <div class="row">
+                    <div class="input-field">
+                        <label for="name">Name:</label>
+                        <input placeholder="Seu nome" id="name" name="name"  type="text" />
+                        <span id="name-error" class="error"></span>
+                    </div>
+                    <div class="input-field">
+                        <label for="lastName">Sobrenome:</label>
+                        <input placeholder="Seu Sobrenome" id="lastName" name="lastName" type="text" />
+                        <span id="lastName-error" class="error"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field">
+                        <label for="email">Email:</label>
+                        <input placeholder="Seu email" id="email" name="email"type="email" />
+                        <span id="email-error" class="error"></span>
+                    </div>
+                    <div class="input-field">
+                        <label for="phone">Telefone:</label>
+                        <input placeholder="(xx) 9 9999-9999" maxlength="15" id="phone" name="phone" type="text"  oninput="formatarTelefone(this)"/>
+                        <span id="phone-error" class="error"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field">
+                        <label for="message">Sua mensagem:</label>
+                        <textarea placeholder="Escreva sua mensagem" maxlength="200" id="message" name="message" rows="8" type="text" >
+                        </textarea>
+                    </div>
+                </div> 
+                <div class="buttonForm">
+                    <button type="submit" id="submitButton">Enviar mensagem</button>
+                </div>     
+            </form>
+        </div>
+     </section> 
+     <section class="address-map">
+        <div class="container">
+            <h2>Endereço</h2>  
+        </div>
+       <div class="mapFlex">
+            <div id="map"></div>
+        </div>
+
+     </section>
+    </main>
+    <footer>
+        <div class="rowFooter">
+            <div class="logoFooter">
+                <img src="assetss/logo.png">
+            </div>
+            <div class="footerContent">
+                <div class="links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#hero" target="_blank">inicio</a></li>
+                        <li><a href="#beneficios">beneficios</a></li>
+                        <li><a href="#testimonial">Clientes</a></li>
+                        <li><a href="conheca">Sobre Projeto</a></li>
+                        <li><a href="contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="contatoFooter">
+                    <h3>Nosso contato</h3>
+                    <ul>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                            contato@enemfudendo
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>
+                            (19) 4002 8922
+                        </li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                            Campinas SP
+                        </li>
+                    </ul>
+                    <ul class="socialMedia">
+                        <li>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+    </footer>
+</body>
+</html>

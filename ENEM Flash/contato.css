@@ -1,0 +1,47 @@
+.queremos{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.queremos h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.queremos h3{
+    font-size: 1.8rem;
+    margin-top: 40px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.address-map{
+    height: 80vh;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.address-map{
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.address-map .mapFlex{
+    display: flex;
+    justify-content: center;
+}
+
+.address-map #map {
+    height: 50vh;
+    width: 80%; 
+}
+
+@media screen and (max-width:992px){
+    .queremos h1{
+        font-size: 2.5rem;
+    }
+    .queremos h3{
+        font-size: 1.3rem;
+        width: 90%;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é o seu site de estudos">
+    <meta name="keywords" content="Estudos, Vestibular, Faculdade">
+    <meta name="author" content="Bruno Henrique">
+     
+    
+   
+
+    <title>ENEM Flash - Home</title>
+
+    <style>
+        body {
+            
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.redd.it/elpf85ngcvp61.jpg'); /* Substitua pelo caminho real da sua imagem */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: FreeMono, monospace;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .conteudo {
+            /* Estilos adicionais para o conteúdo da página */
+            padding: 360px;
+            color: #fff; /* Cor do texto na página */
+
+            animation: type 3s steps(30);
+            color: #ffa8e0;
+            font-size: 18px;
+            font-family: consolas;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 15px;
+            font-weight: 800;
+            font-family: Noto Sans, sans-serif;
+            background: -webkit-linear-gradient(#a4fcf3,#c9a4fc,#fca4f0,#fca4f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform:uppercase;
+            }
+
+            @keyframes type{
+            0%{
+                width:0ch;
+            }
+            
+            100%{
+                width:27ch;
+            }
+            }
+
+            @keyframes blink{
+            0%{opacity:1;}
+            50%{opacity:0;}
+            100%{opacity:1;}
+            
+            
+        }
+
+
+        
+
+        a{
+            color: rgb(255, 0, 179);
+        }
+
+
+        .border {
+            pointer-events: none;
+            z-index: 1000;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border-style: solid;
+            border-color: #ff7fdf;
+            border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+            border-image-slice: 1;
+            border-width: 10px 10px 10px 10px;
+        }
+
+        .overlay img {
+            pointer-events: none;
+            display: flex;
+            position: fixed;
+            left: 0;
+            bottom:0px;
+            height: 100%;
+            width: 100%;
+            animation-name: filter;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            }
+            @keyframes filter {
+            0% {filter: opacity(40%) brightness(110%);}
+            50% {filter: opacity(60%) brightness(110%);}
+            100% {filter: opacity(40%) brightness(110%);}}
+        
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="border"></div>
+
+    <div class="overlay">
+        <img src="https://i.postimg.cc/26hSKDkM/giphy-2.gif" />
+        </div>
+
+    <div class="conteudo">
+        <h1>Bem vindo ao ENEM Flash</h1>
+
+        <!-- Conteúdo da sua página aqui -->
+        <a href="aluno ou prof.html" color="pink"> <h1>logar</h1></A>  
+    </div>
+
+</body>
+</html>
